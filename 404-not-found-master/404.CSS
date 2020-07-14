@@ -1,0 +1,15 @@
+img {
+  /* float: left; */
+  border: 2px solid green;
+  margin-left: 150px;
+}
+
+div {
+  float: right;
+  width: 400px;
+  height: 400px;
+  border: 2px solid blue;
+  margin-top: 1px;
+  margin-right: 200px;
+  font-family: monospace;
+}
