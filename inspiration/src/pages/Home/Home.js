@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Images from "../../components/Images/Images";
 import { Redirect } from "react-router-dom";
+
 class Home extends React.Component {
   constructor() {
     super();
