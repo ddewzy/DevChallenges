@@ -1,6 +1,7 @@
 import React from "react";
-// import "./Photographer.css";
+import "./Photographer.css";
 import Images from "../../components/Images/Images";
+import { Link } from "react-router-dom";
 
 class Photographer extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Photographer extends React.Component {
       "https://api.unsplash.com/users/" + this.props.match.params.username,
       {
         headers: {
-          Authorization: `Client-ID ${process.env.REACT_APP_API_KEY}`,
+          Authorization: `Client-ID Qh7NQWubxcXnPMO1m8PhAf1FT_CUiB_MUnOpBuTTl_4`,
         },
       }
     )
@@ -34,7 +35,7 @@ class Photographer extends React.Component {
         "/photos?order_by=latest",
       {
         headers: {
-          Authorization: `Client-ID ${process.env.REACT_APP_API_KEY}`,
+          Authorization: `Client-ID Qh7NQWubxcXnPMO1m8PhAf1FT_CUiB_MUnOpBuTTl_4`,
         },
       }
     )
@@ -62,7 +63,16 @@ class Photographer extends React.Component {
           </div>
           <div className="info-block">
             <p className="header">Portfolio</p>
-            <p><a href={this.state.user.portfolio_url}>{this.state.user.portfolio_url}</a></p>
+            <p>
+              <a href={this.state.user.portfolio_url}>
+                {this.state.user.portfolio_url}
+              </a>
+            </p>
+          </div>
+          <div className="info-block">
+            <Link to="/">
+              <p className="header">Home</p>
+            </Link>
           </div>
         </div>
         <div className="photographer-images">

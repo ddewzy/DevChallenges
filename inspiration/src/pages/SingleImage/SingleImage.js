@@ -12,7 +12,7 @@ class SingleImage extends React.Component {
   componentDidMount() {
     fetch("https://api.unsplash.com/photos/" + this.props.match.params.id, {
       headers: {
-        Authorization: `Client-ID ${process.env.REACT_APP_API_KEY}`,
+        Authorization: `Client-ID Qh7NQWubxcXnPMO1m8PhAf1FT_CUiB_MUnOpBuTTl_4`,
       },
     })
       .then((response) => response.json())
@@ -35,7 +35,7 @@ class SingleImage extends React.Component {
             <figcaption>
               Photographed By{" "}
               <span className="image-photographer">
-                <Link to={"/photographer/" + this.state.image.user.id}>
+                <Link to={"/photographer/" + this.state.image.user.username}>
                   {this.state.image.user.name}
                 </Link>
               </span>

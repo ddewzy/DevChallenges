@@ -14,7 +14,7 @@ class Home extends React.Component {
   componentDidMount() {
     fetch("https://api.unsplash.com/photos/random?count=12", {
       headers: {
-        Authorization: `Client-ID ${process.env.REACT_APP_API_KEY}`,
+        Authorization: `Client-ID Qh7NQWubxcXnPMO1m8PhAf1FT_CUiB_MUnOpBuTTl_4`,
       },
     })
       .then((response) => {
@@ -33,6 +33,7 @@ class Home extends React.Component {
       .catch((error) => console.error(error));
   }
   render() {
+    console.log(this.state.redirect);
     if (this.state.redirect) {
       return <Redirect to="/rate-limit-exceeded" />;
     }
