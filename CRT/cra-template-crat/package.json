@@ -10,8 +10,8 @@
   "main": "template.json"
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/cra-template"
+    "url": "https://github.com/ddewzy/DevChallenges.git",
+    "directory": "DevChallenges/CRT"
   },
   "license": "MIT",
   "engines": {
