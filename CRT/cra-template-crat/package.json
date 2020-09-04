@@ -1,17 +1,17 @@
 {
-  "name": "crat",
+  "name": "cra-template-crat",
   "version": "1.0.0",
   "keywords": [
     "react",
     "create-react-app",
     "template"
   ],
-  "description": "Dalene's Create React App custom template.",
+  "description": "Create React App custom template.",
   "main": "template.json"
   "repository": {
     "type": "git",
     "url": "https://github.com/ddewzy/DevChallenges.git",
-    "directory": "DevChallenges/CRT"
+    "directory": "packages/cra-template"
   },
   "license": "MIT",
   "engines": {

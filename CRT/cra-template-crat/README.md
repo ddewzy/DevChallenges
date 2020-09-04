@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+create a new project with the following command:
+
+npx create-react-app your-project-name --template [your-template-name]
+
+your-template-name should be the name of your template without the cra-template- prefix. The --template parameter will identify it as a template.
+
+CREATED FROM:
+https://dev.to/papabearcodes/building-your-own-create-react-app-template-3ii0
+
 ## Available Scripts
 
 In the project directory, you can run:
